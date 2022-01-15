@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #f4eee6;
+}
+
+#first-banner{
+    width: 90%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: auto;
+    text-align: center;
+    background-color: #f4eee6;
+        color: #204e3c;
+   font-family: 'Lora', serif;;
+}
+
+
+#first-banner div img{
+    width: 100%;
+    height: 500px;
+}
+
+#first-banner div:first-child{
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 25px;
+    line-height: 70px;
+
+
+}
+#first-banner button{
+    
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    background-color:#f4eee6 ;
+    border: 1px solid #2a302e;
+    font-weight: bold;
+    color: #2a302e;
+}
+#first-banner button:hover{
+    
+
+    background-color:#204E3C;
+
+    font-weight: bold;
+    color: white;
+}
+
+
+#shop-by{
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 600px 600px;
+}
+.shop-by-text{
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+}
+.shop-by-text h1{
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 1px solid black;
+}
+.shop-by-text p{
+    margin-top: 40px;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.shop-by-img img{
+    width: 100%;
+    height: 200px;
+}
+
+ .shop-by-img {
+position: absolute;
+bottom: 0;
+right: 0;
+ }
+
+
+
+
+
+#shop-by >div:nth-child(1){
+    background-color: #B9CCB9;
+    position: relative;
+}
+#shop-by >div:nth-child(2){
+    background-color: #E1E1DF;
+    position: relative;
+  
+}
+#shop-by >div:nth-child(3){
+    background-color: #EEC3C1;
+      position: relative;
+}
+#shop-by >div:nth-child(4){
+    background-color: #D5E8E6;
+      position: relative;
+}
+#shop-by >div:nth-child(5){
+    background-color: #E4E5E1;
+    grid-area: 2/1/3/3;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+#shop-by >div:nth-child(5)>div:first-child>p{
+    margin-top: 50px;
+    font-weight: bold;
+    
+
+}
+#shop-by >div:nth-child(5)>div:first-child>div{
+    margin-top: 40px;
+     color: #204e3c;
+   font-family: 'Lora', serif;
+   font-size: 60px;
+
+}
+#shop-by >div:nth-child(5)>div:nth-child(2)>div{
+    font-size: 18px;
+    width: 500px;
+    margin: auto;
+    line-height: 25px;
+    margin-top: 40px;
+}
+#shop-by >div:nth-child(5)>div:nth-child(2)>div{
+    font-size: 15px;
+    width: 500px;
+    margin: auto;
+    line-height: 30px;
+    margin-top: 40px;
+}
+#shop-by >div:nth-child(5)>div:nth-child(2)>button{
+    width: 300px;
+    margin-top:20px;
+    padding: 15px;
+    font-size: larger;
+    border: 1px solid black;
+    font-weight: bold;
+        background-color: #E4E5E1;
+  
+}
+#shop-by >div:nth-child(5)>div:nth-child(2)>button:hover{
+  color: white;
+  background-color: #204E3C;
+}
+
+#shop-by >div:nth-child(6){
+    background-color: #C74949;
+    grid-area: 2/3/3/5;
+    padding: 20px 30px ;
+    text-align: center;
+    position: relative;
+    
+}
+#shop-by >div:nth-child(6)>div:first-child{
+   
+    margin-top: 50px;
+     color: white;
+   font-family: 'Lora', serif;
+   font-size: 50px;
+
+}
+#shop-by >div:nth-child(6)>div:nth-child(2){
+    margin-top: 50px;
+     color: white;
+   font-family: 'Lora', serif;
+   font-size: 25px;
+
+}
+#shop-by >div:nth-child(6)>button{
+
+     width: 300px;
+    margin-top:40px;
+    padding: 15px;
+    font-size: larger;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+        background-color: #C74949;
+}
+#shop-by >div:nth-child(6)>button:hover{
+     color: white;
+  background-color: #000000;
+  border: none;
+
+
+
+}
+#shop-by >div:nth-child(5)>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+   
+}
+#shop-by >div:nth-child(6)>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+   opacity: 0.8;
+   
+}
+.allbest{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+    font-family: 'Lora', serif;
+    width: 600px;
+    margin: auto;
+}
+.real-deal{
+    margin-top: 200px;
+}
+
+.grass{
+    position: absolute;
+}
+
+
+

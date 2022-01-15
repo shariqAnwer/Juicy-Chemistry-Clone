@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/checkout.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Complaete_order</title>
+</head>
+<body>
+    <div id="checkout-parent">
+        <div id="checkout-left">
+            <div id="top">
+                <div><img src="../img/JC_Logo_NewWeb_B_250x.png"  onclick="home()"alt="">
+                <ul>
+                    <li>Cart<i class="fas fa-greater-than"></i></li>
+                    <li>Information<i class="fas fa-greater-than"></i></li>
+                    <li>Shipping<i class="fas fa-greater-than"></i></li>
+                    <li>Payment</li>
+                </ul></div>
+            </div>
+            <div id="shipping-address-display">
+                <div id="display-address">
+                    <table>
+                        <tr>
+                            <td>contact</td>
+                            <td id="user_email"></td>
+                            <td>change</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Ship to</td>
+                            <td id="user_address"></td>
+                            <td>change</td>
+                        </tr>
+                         <tr>
+                            <td>method</td>
+                            <td id="shipping"></td>
+                            <td>change</td>
+                        </tr>
+                    </table>
+                </div>
+                <h3>Payment</h3>
+                 <div id="payment">
+                     <table>
+                         
+                         <tr>
+                             <td><label for=""><input type="radio" name="1" id=""><img src="https://cdn.shopify.com/shopifycloud/shopify/assets/checkout/offsite-gateway-logos/paytm@2x-af01977ff64627f57925062e195a194de280c6c879267a51456c0d579acb90c2.png" alt=""></label></td>
+                             <td>
+                                 <i class="fab fa-cc-visa"></i>
+                                 <i class="fab fa-cc-mastercard"></i>
+                                 <i class="fab fa-cc-amex"></i>
+                                 ...
+                             </td>
+                             
+                            </tr>
+                            <tr style="height: 200px;" colspan=2>
+
+                            
+                            </tr>
+                            <tr>
+                             <td><label for=""><input type="radio" name="1" id=""><img src="https://cdn.shopify.com/s/files/applications/2624136140ec4bf15212a66b4fefa172.png?height=24&1444280688" alt=""></label></td>
+                             <td>
+                                 <i class="fab fa-cc-visa"></i>
+                                 <i class="fab fa-cc-mastercard"></i>
+                                 <i class="fab fa-cc-amex"></i>
+                                 ...
+                             </td>
+                             
+                            </tr>
+                            <tr>
+                             <td ><label for=""><input type="radio" name="1" id="">Razorpay(cards UPI,NetBanking,Wallets)</label></td>
+                             <td>
+                                 <i class="fab fa-cc-visa"></i>
+                                 <i class="fab fa-cc-mastercard"></i>
+                                 <i class="fab fa-cc-amex"></i>
+                                 ...
+                             </td>
+                             
+                            </tr>
+                            <tr>
+                                 <td><label for=""><label for=""><input type="radio" name="1" id="">Cash on Delivery</label></td>
+                              
+                            </tr>
+                            <tr>
+                             <td><label for=""><input type="radio" name="1" id=""><img src="https://cdn.shopify.com/s/files/applications/cf8da439fdbc580ee9a666e47eb462de.png?height=24&1594298386" alt=""></label></td>
+                             <td>
+                                 <i class="fab fa-cc-visa"></i>
+                                 <i class="fab fa-cc-mastercard"></i>
+                                 <i class="fab fa-cc-amex"></i>
+                                 ...
+                             </td>
+                             
+                            </tr>
+                    </table>
+                    </div>
+                <h3>Billing address</h3>
+                
+                    <div id="billing-address">
+                     <table>
+                         
+                         <tr>
+                             <td><label for=""><input type="radio" name="1" id="">same as shipping address</label></td>
+                             
+                            </tr>
+                            <tr>
+                                 <td><label for=""><input type="radio" name="1" id="">Use a different billing address</label></td>
+                              
+                            </tr>
+                    </table>
+                    </div>
+                
+                    
+                        <div id="proceed">
+                            <button><i class="fas fa-less-than"></i> return to cart</button>
+                            <input type="button" value="Complete Order" onclick="orderPlaced()" >
+                        </div>
+            
+                    <div style="margin-top: 70px; padding: 20px; border-bottom: 1px solid lightgray;">
+                        <ul id="policy">
+                            <li>Refunt policy</li>
+                            <li>Shippong policy</li>
+                            <li>Privacy policy</li>
+                            <li>Terms of service</li>
+                        </ul>
+                    </div>
+            
+                
+            
+            </div>
+           <br>
+           &nbsp;
+
+        </div>
+        <div>
+        <div class="checkout-right">
+                   
+                    <!-- cart data  -->
+                    <div id="shoping-cart-final" style="overflow: scroll; ">
+
+                        
+                    </div>
+                    <div id="bottom-cart-final">
+                      <input type="text" id="coupon" placeholder="apply coupon code">
+                      <button onclick="applycode()">Apply</button>
+                      <div id="total-div-final">
+                        <p style="display: inline-block;width: 60%;">Total </p>
+                        <p id="total-final"></p>
+                      </div>
+
+
+        </div>
+    </div>
+
+    <div class="pop-up" id="pop">
+        <div><i class="far fa-check-circle"></i></div>
+        <div>successfully placed the order</div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="../script/checkout.js"></script>
+    <script src="../script/onclick.js"></script>
+    
+</body>
+</html>

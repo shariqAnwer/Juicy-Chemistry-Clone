@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://kit.fontawesome.com/2631fd5f7c.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style/show_prd_nav.css">
+<link rel="stylesheet" href="../style/show_product.css">
+<link rel="stylesheet" href="../style/cart.css">
+
+
+
+
+    <title>file show product</title>
+    
+
+    
+</head>
+<body>
+ <!-- nav -->
+      <!-- navigation -->
+ <nav class="navbar h-nav ">
+       <div class="left-nav">
+           <div class="burger" onclick="openNav()">
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div>
+           </div>
+           <i class="fas fa-search left-search"></i>
+           <div class="close" onclick="closeNav()"><i class="fas fa-times"></i></div>
+           <ul class="nav-list" >
+              <li class="nav-item-face">
+                 <button>FACE CARE<i class="fas fa-chevron-down"></i></button>
+                  <div class="drop-down">
+            <a href="pages/products.html">CLEANSERS</a>
+            <a href="pages/products.html">TONERS</a>
+            <a href="pages/products.html">MOISTURISERS</a>
+            <a href="pages/products.html">FACIAL OILS</a>
+            <a href="pages/products.html">SUNSCREAM</a>
+            <a href="pages/products.html">EYE CARE</a>
+            <a href="pages/products.html">LIP CARE</a>
+             <a href="pages/products.html">FACE MASK</a>
+            <a href="pages/products.html">FACE SCRUBS</a>
+            <a href="pages/products.html">DUSTING POWDERS</a>
+            <a href="pages/products.html">NEW</a>
+            <a href="pages/products.html">BEST SELLERS</a>
+            <a href="pages/products.html">SHOP BY CONCERN</a>
+            <a href="pages/products.html">VIEW ALL</a>
+           </div>
+              </li>
+
+                <li class="nav-item-hair">
+                 <button>HAIR CARE<i class="fas fa-chevron-down"></i></button>
+                  <div class="drop-down">
+            <a href="pages/products.html">OILS</a>
+            <a href="pages/products.html">MASKS</a>
+            <a href="pages/products.html">SHAMPOOS</a>
+            <a href="pages/products.html">DRY SHAMPOOS</a>
+            <a href="pages/products.html">CONDITIONER</a>
+            <a href="pages/products.html">BEST SELLERS</a>
+            <a href="pages/products.html">SHOP BY CONCERN</a>
+            <a href="pages/products.html">VIEW ALL</a>
+
+           </div>
+              </li>
+               <li class="nav-item-hair">
+                 <button>BODY CARE<i class="fas fa-chevron-down"></i></button>
+                  <div class="drop-down">
+            <a href="pages/products.html">HAND & FOOT CARE</a>
+            <a href="pages/products.html">GOURMET SOAPS</a>
+            <a href="pages/products.html">BODY BUTTERS</a>
+            <a href="pages/products.html">BODY OILS</a>
+            <a href="pages/products.html">BODY WASHES</a>
+            <a href="pages/products.html">DEODRANTS</a>
+            <a href="pages/products.html">SCRUBS</a>
+            <a href="pages/products.html">DUSTING POWRDERS</a>
+            <a href="pages/products.html">AROMATHERAPY</a>
+            <a href="pages/products.html">ACCESSORIES</a>
+            <a href="pages/products.html">NEW</a>
+            <a href="pages/products.html">BEST SELLERS</a>
+            <a href="pages/products.html">VIEW ALL</a>
+           </div>
+              </li>
+              <li class="nav-item-junior">
+                 <button>JUNIOR CARE</button>
+              </li>
+              <li class="nav-item-gifting">
+                 <button>GIFTING</button>
+              </li>
+                 <li class="nav-item-about">
+                 <button>ABOUT<i class="fas fa-chevron-down"></i></button>
+                  <div class="drop-down">
+            <a href="pages/products.html">OUR STORY</a>
+            <a href="pages/products.html">WHY CHOOSE JC</a>
+            <a href="pages/products.html">CERTIFICATION</a>
+            <a href="pages/products.html">CUSTOMERS STORIES</a>
+            <a href="pages/products.html">TESTIMONIAL</a>
+            <a href="pages/products.html">MEDIA</a>
+            <a href="pages/products.html">AWARDS</a>
+            <a href="pages/products.html">RE-CYCLE & REWARD PROGRAM</a>
+            <a href="pages/products.html">JC CARES</a>
+           </div>
+           </li>
+           <li class="nav-item-blog">
+                 <button>BLOG</button>
+              </li>
+              <li class="nav-item-refer">
+                 <button>REFER A FRIEND</button>
+              </li>
+          </ul>
+       </div>
+       <div class="center-nav"><img src="../img/JC_Logo_NewWeb_B_250x.png" alt="" style="background-color: white;"onclick="home()"></div>
+       <div class="right-nav">
+            <i class="fas fa-search"></i>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-bag" onclick="showCart()"></i>
+                <div class="cart-btn">
+                    <div id="cart-head" style="border-bottom: 1px solid lightgray;"><div>Your shoping cart</div><div><i class="fas fa-times" onclick="closeCart()" ></i></div></div>
+                    <!-- cart data  -->
+                    <div id="shoping-cart" style="overflow: scroll;">
+
+                        
+                    </div>
+                    <div id="bottom-cart">
+                      <input type="text">
+                      <button onclick="applycode()">Apply</button>
+                      <div id="total-div">
+                        <p style="display: inline-block;width: 70%;">Total </p>
+                        <p id="total"></p>
+                      </div>
+                      <div onclick="gotoCheckout()" class="check-out-btn">checkOut</div>
+                    </div>
+
+                       <!-- shoping cart data -->
+                </div>
+       </div>
+    </nav>
+    <!--  -->
+  
+  <!-- <div id="main-div"> -->
+    <div id="products" style="margin-top: 250px;">
+      
+      
+
+    </div>
+    <div class="class-below-addtocard_btn">
+      <p>Worldwide Shipping Available</p>
+      <p>Country Of Origin India</p>
+      <p>Avail Contack-less Delivery</p>
+      </div>
+<div id="products-3"></div>
+
+
+<div class ="class-div-how-use"> 
+<p class="class-second-div-heading-2">How do I use it?</p>
+<div class="class-how-to-use-2">
+<img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/products/0014_0e048a3d-17aa-4289-987a-8f06444bf149_1024x1024.jpg?v=1629401600" alt="Images" class="class-second-image">
+
+<div class="class-main-class-div">
+  <span class="class-div-second">STEP 1:</span><br>
+  <p class="class-text-div-2">Rub the soap between your palms and work up a lather.</p><br>
+  <hr>
+<br>
+  <span class="class-div-second">STEP 2:</span><br>
+  <p class="class-text-div-2">Spread lather on your wet face and body with gentle strokes.</p><br>
+  <hr>
+  <br>
+  <span class="class-div-second">STEP 3:</span><br>
+  <p class="class-text-div-2">Scrub your body gently with JC's Bath Mitt (twice a week only).</p><br>
+  <hr>
+  <br>
+  <span class="class-div-second">STEP 4:</span><br>
+  <p class="class-text-div-2">Wash off with lukewarm water.</p><br>
+  <hr>
+  <br>
+  <span class="class-div-second">STEP 5:</span><br>
+  <p class="class-text-div-2">Pat dry with a soft towel and apply your favourite JC moisturiser.</p><br>
+  <hr>
+  <br>
+  
+  <br>
+</div>
+</div>
+<div>
+<div class="class-main-div-second">
+<p class="class-second-div-heading">Here’s why we’re the real deal.</p>
+<div id="slideposter"></div>
+<button class="class-btn-div-second">KNOW MORE</button>
+</div>
+<div class="class-div-asking-why">
+  <p class="class-div-asking-why-text-heading">Our go-to starting point? Asking Why.</p>
+  <p  class="class-div-asking-why-text-text">We're extremely curious people. We can only assume you too are curious when <br>
+    it comes to the world of personal care, and rightfully so. That’s why we insist on <br>
+    addressing the ‘Whys’ you'd need to know before you buy.</p>
+
+<div class="class-asking-why-div">
+
+  <div class="class-asking-why-div-1">
+    <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Source_1_small.png?v=1629553787" class="class-asking-why-div-img">
+
+    <h3 class="class-asking-why-heading">Why these ingredients?</h3>
+    <div class="class-asking-why-div-2"><p><strong>Lime </strong>essential oil acts as a natural antioxidant and antimicrobial agent. It helps improve skin health and promotes a more even tone.</p>
+      <p><strong>Ginger</strong> essential oil exhibits strong antioxidant properties, helps reduce oxidative stress, and calms skin inflammation.&nbsp;</p>
+      <p><strong>Rice </strong>extract helps maintain skin texture, suppleness, and hydration. Its antioxidant content promotes healthier and more youthful skin.</p></div>
+  
+     </div>
+
+     <div class="class-asking-why-div-1">
+      <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Ingredients_1_small.png?v=1629553787" class="class-asking-why-div-img">
+      <h3 class="class-asking-why-heading">Why this source?</h3>
+      <div class="class-asking-why-div-2"><p><strong>Our Lime Essential Oil is sourced from India </strong>because it provides the ideal loamy soil alongside a warm and moist climate which is most conducive to the growth of limes.&nbsp;
+      </p><p><strong>Our Ginger Essential Oil comes from India</strong> because the growth of Ginger is well-suited to the warm and humid climate of the country.</p>
+      <p><strong>Our Rice Water comes from India</strong> because it is native to this country and provides the most conducive climate for rice crops.</p></div>
+    </div>
+     
+    
+
+    <div class="class-asking-why-div-1">
+      <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Formulation_1_small.png?v=1629553787" class="class-asking-why-div-img" >
+      <h3 class="class-asking-why-heading">Why this formulation? </h3>
+      <div class="class-asking-why-div-2"><p><strong>Essential Fatty Acids</strong> make this soap bar super-fatted, which allows it to replenish the skin lipids compromised during cleansing.&nbsp;</p>
+        <p><strong>Antioxidants</strong> like Phytic acid, Ferulic Acid, Zingiberene, and Camphene, protect skin against free radicals and promote a more even skin tone. <strong>Amino Acids</strong> help keep the skin supple, nourished, and smooth.&nbsp;
+      </p><p><strong>Polyphenols</strong> protect skin against sun damage, promote a more even skin tone, and soothe inflammation.</p><p><strong>Plant Vitamins</strong> like Vitamin A, C, and E help keep the skin hydrated, supple, and bright.&nbsp;
+      </p><p><strong>Alpha - Hydroxy Acids</strong> like phytic acid help promote healthy and smooth skin.&nbsp;</p><p><strong>Minerals</strong> like montmorillonite help deep clean pores, while also absorbing all impurities and sebum from the skin.</p>
+    </div>
+    
+    
+    
+    
+      
+    </div>
+  </div>
+</div>
+
+    <div class="class-Allow-our-ingredients-div">
+<img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Mask_Group_121_2x_2691d09e-4f69-4c27-a253-b887cb8c82b0.png?v=1629441880" class="class-Allow-our-ingredients-img">
+
+<p class="class-Allow-our-ingredients-paragraph">Allow our ingredients to <br>introduce themselves.</p>
+
+<div class="class-Allow-our-ingredients-in-div">
+  <div class="class-Allow-our-ingredients-in-div-1">
+  <h2 class="class-Allow-our-ingredients-in-div-1-heading">Organic Damask Rose Essential Oil</h2>
+          <p class="class-Allow-our-ingredients-in-div-1-paragraph">The Damask Rose, also known as the Bulgarian Rose, is a variety of rose that has numerous benefits for the skin. It helps promote a more even skin tone, improves firmness, and soothes inflamed skin.
+</p>
+          <small class="class-Allow-our-ingredients-in-div-1-paragraph-1">Nutritional Value</small>
+          <p class="class-Allow-our-ingredients-in-div-1-paragraph-1">Anthocyanins, Flavonoids, Vitamin C, Antibacterial Properties</p>
+        </div>
+
+        <div class="class-Allow-our-ingredients-in-div-1">
+
+
+          <h2 class="class-Allow-our-ingredients-in-div-1-heading">Organic Coffee</h2>
+          <p class="class-Allow-our-ingredients-in-div-1-paragraph">Technically a fruit that is grown on a tree, Coffee exhibits strong antioxidant and anti-inflammatory properties. It helps soothe puffy eyes, reduces dark circles, and delays signs of ageing.</p>
+          <small class="class-Allow-our-ingredients-in-div-1-paragraph-1">Nutritional Value</small>
+          <p class="class-Allow-our-ingredients-in-div-1-paragraph-1">Caffeine, Polyphenols and Hydrocinnamic acids (Antioxidants) </p>
+        </div>
+
+        <div class="class-Allow-our-ingredients-in-div-1"> 
+          <h2 class="class-Allow-our-ingredients-in-div-1-heading">Organic Camellia Seed Oil</h2>
+          <p class="class-Allow-our-ingredients-in-div-1-paragraph">Also known as the 'tea plant', Camellia Seed Oil is an excellent moisturiser for the skin. It keeps the under eye area soft, supple, and smoother - owing to its rich antioxidant content.</p>
+          <small class="class-Allow-our-ingredients-in-div-1-paragraph-1">Nutritional Value</small>
+          <p class="class-Allow-our-ingredients-in-div-1-paragraph-1">Oleic Acid (Omega-9 Fatty Acid), Vitamins A and E, Minerals</p>
+        </div>
+</div>
+
+<img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Mask_Group_120_2x_a8709b48-261b-4eba-bfe8-353d0e829722.png?v=1629442124" class="class-Allow-our-ingredients-img-2">
+       
+    </div>
+    <div class="new-div-last"> </div>
+
+
+<!-- <div class="class-div-main-4th-div">
+
+<div class="class-div-maine-ist-part">
+
+<img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/0062.png?v=1628921476" class="class-img-ist-part">
+<p class="class-div-div-main-heading">Putting Beauty to the <br>test.</p>
+
+<div class="class--div-maine-ist-part-div-1st">
+  <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Group_AAA.png?v=1629738215" class="class-img-ist-part-img-1">
+  <h6  class="class--div-maine-ist-part-heading">COSMOS Organic  </h6>
+  <p class="class--div-maine-ist-part-paragraph">Our products are certified organic by ECOCERT as per COSMOS V3 guidelines. Our commitment to our customers has always been to provide the best of organic products and this certification is a testament to our commitment.  </p>
+
+  <br>
+  <img src="https://cdn.shopify.com/s/files/1/0058/7779/2832/files/Derm-01.png?v=1630741069" class="class-img-ist-part-img-1">
+  <h6  class="class--div-maine-ist-part-heading">Dermatologically Tested  </h6>
+  <p class="class--div-maine-ist-part-paragraph">Our products are safe for use and have been tested for the same. But it is possible that certain ingredients may not be suitable for your skin so it is always advisable to do a patch test first and verify biocompatibility. </p>
+</div>
+</div>
+</div>
+<span> </span> -->
+<div class="last-div-main-div">
+<div class="class-more-info-div">
+<p class="class-more-info-div-p">More Info</p>
+<hr>
+<h6 class="class-more-info-head" > Care & Patch Test <span class="span-under-div">&#10010;</span> </h6>
+<hr>
+<h6 class="class-more-info-head">Disclaimer  <span class="span-under-div">&#10010;</span></h6>
+<hr>
+<h6 class="class-more-info-head" >Additional Notes <span class="span-under-div">&#10010;</span></h6>
+<hr>
+<h6 class="class-more-info-head">Juicy Lab Card   <span class="span-under-div">&#10010;</span></h6>
+<hr>
+
+</div>
+
+
+
+
+  <div class="class-more-info-div-1">
+  <p class="class-more-info-div-p-1">Ask us why</p>
+
+  <p class="class-more-info-head-1" > What Age Group Can Use This Soap Bar? <span class="span-under-div">&#10010;</span> </p>
+
+  <p class="class-more-info-head-1">Is This A Unisex Product? <span class="span-under-div">&#10010;</span></p>
+ 
+  <p class="class-more-info-head-1" >Can Expecting And Breastfeeding Mothers Use This Product? <span class="span-under-div">&#10010;</span></p>
+ 
+  <p class="class-more-info-head-1">Does The Scent Of The Soap Bar Change Over Time?  <span class="span-under-div">&#10010;</span></p>
+  
+  <p class="class-more-info-head-1" >Does This Product Contain Essential Oils? <span class="span-under-div">&#10010;</span></p>
+ 
+  <p class="class-more-info-head-1">What Is The Shelf Life Of This Product?  <span class="span-under-div">&#10010;</span></p>
+  </div>
+  </div>
+
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="../script/products.js"></script>
+  <script src="../script/cart.js"></script>
+<script src="../script/show_product.js"></script>
+<script src="../script/response-nav.js"></script>
+<script src="../script/onclick.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../style/products.css">
+<!-- <link rel="stylesheet" href="register.css"> -->
+<script src="https://kit.fontawesome.com/2631fd5f7c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../style/response-nav.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../style/cart.css">
+<link rel="stylesheet" href="../style/footer.css">
+<title>shop Now</title>
+</head>
+<body>
+<!-- nav -->
+      <!-- navigation -->
+ <nav class="navbar h-nav ">
+       <div class="left-nav">
+           <div class="burger" onclick="openNav()">
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div>
+           </div>
+           <i class="fas fa-search left-search"></i>
+           <div class="close" onclick="closeNav()"><i class="fas fa-times"></i></div>
+           <ul class="nav-list" >
+              <li class="nav-item-face">
+                 <button>FACE CARE<i class="fas fa-chevron-down"></i></button>
+                  <div class="drop-down">
+            <a href="products.html">CLEANSERS</a>
+            <a href="products.html">TONERS</a>
+            <a href="products.html">MOISTURISERS</a>
+            <a href="products.html">FACIAL OILS</a>
+            <a href="products.html">SUNSCREAM</a>
+            <a href="products.html">EYE CARE</a>
+            <a href="products.html">LIP CARE</a>
+             <a href="products.html">FACE MASK</a>
+            <a href="products.html">FACE SCRUBS</a>
+            <a href="products.html">DUSTING POWDERS</a>
+            <a href="products.html">NEW</a>
+            <a href="products.html">BEST SELLERS</a>
+            <a href="products.html">SHOP BY CONCERN</a>
+            <a href="products.html">VIEW ALL</a>
+           </div>
+              </li>
+
+                <li class="nav-item-hair">
+                 <button>HAIR CARE<i class="fas fa-chevron-down"></i></button>
+                  <div class="drop-down">
+            <a href="products.html">OILS</a>
+            <a href="products.html">MASKS</a>
+            <a href="products.html">SHAMPOOS</a>
+            <a href="products.html">DRY SHAMPOOS</a>
+            <a href="products.html">CONDITIONER</a>
+            <a href="products.html">BEST SELLERS</a>
+            <a href="products.html">SHOP BY CONCERN</a>
+            <a href="products.html">VIEW ALL</a>
+
+           </div>
+              </li>
+               <li class="nav-item-hair">
+                 <button>BODY CARE<i class="fas fa-chevron-down"></i></button>
+                  <div class="drop-down">
+            <a href="products.html">HAND & FOOT CARE</a>
+            <a href="products.html">GOURMET SOAPS</a>
+            <a href="products.html">BODY BUTTERS</a>
+            <a href="products.html">BODY OILS</a>
+            <a href="products.html">BODY WASHES</a>
+            <a href="products.html">DEODRANTS</a>
+            <a href="products.html">SCRUBS</a>
+            <a href="products.html">DUSTING POWRDERS</a>
+            <a href="products.html">AROMATHERAPY</a>
+            <a href="products.html">ACCESSORIES</a>
+            <a href="products.html">NEW</a>
+            <a href="products.html">BEST SELLERS</a>
+            <a href="products.html">VIEW ALL</a>
+           </div>
+              </li>
+              <li class="nav-item-junior">
+                 <button>JUNIOR CARE</button>
+              </li>
+              <li class="nav-item-gifting">
+                 <button>GIFTING</button>
+              </li>
+                 <li class="nav-item-about">
+                 <button>ABOUT<i class="fas fa-chevron-down"></i></button>
+                  <div class="drop-down">
+            <a href="products.html">OUR STORY</a>
+            <a href="products.html">WHY CHOOSE JC</a>
+            <a href="products.html">CERTIFICATION</a>
+            <a href="products.html">CUSTOMERS STORIES</a>
+            <a href="products.html">TESTIMONIAL</a>
+            <a href="products.html">MEDIA</a>
+            <a href="products.html">AWARDS</a>
+            <a href="products.html">RE-CYCLE & REWARD PROGRAM</a>
+            <a href="products.html">JC CARES</a>
+           </div>
+           </li>
+           <li class="nav-item-blog">
+                 <button>BLOG</button>
+              </li>
+              <li class="nav-item-refer">
+                 <button>REFER A FRIEND</button>
+              </li>
+          </ul>
+       </div>
+       <div class="center-nav"><img src="../img/JC_Logo_NewWeb_B_250x.png" alt=""></div>
+       <div class="right-nav">
+            <i class="fas fa-search"></i>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-bag" onclick="showCart()"></i>
+                <div class="cart-btn">
+                    <div id="cart-head" style="border-bottom: 1px solid lightgray;"><div>Your shoping cart</div><div><i class="fas fa-times" onclick="closeCart()" ></i></div></div>
+                    <!-- cart data  -->
+                    <div id="shoping-cart" style="overflow: scroll;">
+
+                        
+                    </div>
+                    <div id="bottom-cart">
+                      <input type="text">
+                      <button onclick="applycode()">Apply</button>
+                      <div id="total-div">
+                        <p style="display: inline-block;width: 70%;">Total </p>
+                        <p id="total"></p>
+                      </div>
+                      <div onclick="gotoCheckout()" class="check-out-btn">checkOut</div>
+                    </div>
+
+                       <!-- shoping cart data -->
+                </div>
+       </div>
+    </nav>
+    <!--  -->
+
+  <center style="margin-top: 15%;">
+    <h1 class="heading">Cleansers </h1>
+    <span class="text-content">Cleansing is the first step of a skin care routine. A properly cleansed face is<br> 
+      better primed to benefits from all subsequent products applied. Try our potent 
+      <br>and efficacious organic cleansers.</span>
+    
+        
+       
+<div id="filter">
+    <button style="width: 50%; background-color: white;font-size: 25px;border: none;font-weight:bold ;color: #204e3c;" onclick="openfilter()">
+      Filter
+    
+    </button>
+    <select  id="select2" onchange="sort(this.value)" style="border: none; border-left: 1px solid grey;height: 58px;">
+      <option value="null">Short by</option>
+      <option value="1">Price,Low to High</option>
+      <option value="2">Price,High to Low</option>
+      <option value = "3">Best Selling</option>
+      <option value = "3">Featured</option>
+      
+    </select>
+
+    
+  </div>
+</center>
+<div class="filter-cat" >
+  <div> 
+    <div id="cart-head" style="margin-top:-10px ;border-bottom: 1px solid lightgray;"><div style="margin-left:50px;color: grey;">Filter</div><div><i class="fas fa-times" onclick="closefilter()" ></i></div></div>
+
+
+  </div>
+  <form id="filter-form" onsubmit="filter(event)" >
+    <h3 style="padding: 10px;">Category</h3>
+    <label ><input type="radio" value="cleansers" name="category" id="category">
+      Cleansers</label><br>
+     <label >
+      <input type="radio" value="gourment-cleansers" name="category" id="category">Gourmennt cleansers</label>
+  <br>
+      <label >
+      <input type="radio" value="makeup-cleaner" name="category" id="category">Makeup Cleaner</label>
+<br>
+
+         <h3 style="padding: 10px;">Skin Concern</h3>
+    <label ><input type="radio" value="cleansers" name="category" id="category">
+      Acne</label><br>
+     <label >
+      <input type="radio" value="gourment-cleansers" name="category" id="category">Ageing</label>
+  <br>
+      <label >
+      <input type="radio" value="makeup-cleaner" name="category" id="category">Blackheads/Pores</label><br>
+      
+    
+    <label ><input type="radio" value="cleansers" name="category" id="category">Dryness</label><br>
+     <label >
+      <input type="radio" value="gourment-cleansers" name="category" id="category">Dullness</label>
+  <br>
+      <label >
+      <input type="radio" value="makeup-cleaner" name="category" id="category">Oil Control</label><br>
+      
+     <label >
+      <input type="radio" value="gourment-cleansers" name="category" id="category">Ageing</label>
+  <br>
+      <label >
+      <input type="radio" value="makeup-cleaner" name="category" id="category">Pigmentation</label><br>
+      
+    
+    <label ><input type="radio" value="cleansers" name="category" id="category">Pimples</label><br>
+     <label >
+      <input type="radio" value="gourment-cleansers" name="category" id="category">Scars/Marks</label>
+  <br>
+
+      
+      
+
+      
+      
+       <div style="position: absolute; bottom: 50px;left: 40px;">
+<br>
+
+         <input type="submit" name="" id="apply-filter" value="Apply" style="width: 350px; height: 50px; color: white;">
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        </form>
+</div>  
+  
+  <br>
+  <br>
+    <div id="products" style="margin-bottom: 200px;"></div>
+  
+
+
+         <footer  class="footer" id="section footer">
+    <div class="footer-block-2 footer-block-link">
+        <h2 class="footer-title-heading">SHOP
+
+        </h2>
+        <ul class="linklist-accordion-body">
+          <li class="linklist-item"><a>Face Care</a></li>
+          <li class="linklist-item"><a>Body Care</a></li>
+          <li class="linklist-item"><a>Hair Care</a></li>
+          <li class="linklist-item"><a>Aromatherpy</a></li>
+          <li class="linklist-item"><a>Junior Care</a></li>
+          <li class="linklist-item"><a>Shop By concern</a></li>
+          <li class="linklist-item"><a>Gifting</a></li>
+          <li class="linklist-item"><a>Accessories</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+    <div class="footer-block-3 footer-block-links">
+        <h2 class="footer-title-heading">ABOUT
+        </h2>
+        <ul class="linklist-accordion-body">
+          <li class="linklist-item"><a>Our Story</a></li>
+          <li class="linklist-item"><a>Why Choose Jc</a></li>
+          <li class="linklist-item"><a>Certification</a></li>
+          <li class="linklist-item"><a>Customer Stories</a></li>
+          <li class="linklist-item"><a>Media</a></li>
+          <li class="linklist-item"><a>Awards</a></li>
+          <li class="linklist-item"><a>Jc Cares</a></li>
+          <li class="linklist-item"><a>Medical Desclaimer</a></li>
+        </ul>
+        
+
+
+    </div>
+    <div class="footer-block-4 footer-block-newsletter">
+      <h2 class="footer-title-heading">QUICK LINKS
+      </h2>
+      <ul class="linklist-accordion-body">
+        <li class="linklist-item"><a>Track Order</a></li>
+        <li class="linklist-item"><a>Shipping Policy</a></li>
+        <li class="linklist-item"><a>Refund & Cancellation</a></li>
+        <li class="linklist-item"><a>Terms & Condition</a></li>
+        <li class="linklist-item"><a>Privacy Policy</a></li>
+        <li class="linklist-item"><a>Re-cycle & Reward</a></li>
+        <li class="linklist-item"><a>Refer a Friend</a></li>
+     
+      </ul>
+
+    </div>
+    <div class="container">
+            <h2 class="footer-title-heading">Stay Updated</h2>
+            <div class="footer-content">
+              <p>Get Updates,offers and the latest</p>
+            </div>
+            <form class="footer-newslatter-form">
+              <input type="emils" class="form-input" placeholder="Enter your email address"/>
+              <button type="submit" class="form-submit">Subscribe
+
+              </button>
+
+            </form>
+
+
+        </div>
+        <div class="footer-block-5 footer-block-text">
+          <h2  class="footer-title-heading">Get In Touch</h2>
+
+        <!-- social Icons -->
+          
+          <div id="socialIcons">
+            <a href="https://twitter.com/chemistry_juicy" class="fa fa-twitter"></a>
+            <a  href="https://www.linkedin.com/company/juicy-chemistry/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/juicy_chemistry/" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/JuicyChemistry" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/channel/UCNkBtAfx0b2Gs4_eMXE6qcw/featured" class="fa fa-youtube"></a>           
+        </div>
+        
+          <div class="mail"><a>sales@juicychemistry.com</a>
+
+          </div>
+          <div class="footer-content-address">
+            No 106,Ramalingam Road(west),Next to
+            <br>
+            Ramalingam Sowdeshwari Hall, R.S Puram,
+            <br>
+            Coimbatore-641002,India
+
+          </div>
+          <div class="time">
+            Monday-Saturday,10.00AM to 8.00PM
+            <br>
+            CIN No.:U24304TZ2019PTC032309
+
+        </div>
+
+      
+
+    </div>
+  </footer>
+<script src="../script/response-nav.js"></script>
+<script src="../script/products.js"></script>
+<script src="../script/cart.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/checkout.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>shipping</title>
+</head>
+<body>
+    <div id="checkout-parent">
+        <div id="checkout-left">
+            <div id="top">
+                <div><img src="../img/JC_Logo_NewWeb_B_250x.png" onclick="home()" alt="">
+                <ul>
+                    <li>Cart<i class="fas fa-greater-than"></i></li>
+                    <li>Information<i class="fas fa-greater-than"></i></li>
+                    <li>Shipping<i class="fas fa-greater-than"></i></li>
+                    <li>Payment</li>
+                </ul></div>
+            </div>
+            <div id="shipping-address-display">
+                <div id="display-address">
+                    <table>
+                        <tr>
+                            <td>contact</td>
+                            <td id="user_email"></td>
+                            <td>change</td>
+                        </tr>
+                        <tr>
+                            <td>Ship to</td>
+                            <td id="user_address"></td>
+                            <td>change</td>
+                        </tr>
+                    </table>
+                </div>
+                <h4>Shipping method</h4>
+                
+                    <div id="shipping-method">
+                     <table>
+                         
+                         <tr>
+                             <td><label for=""><input type="radio" name="1" id="shipping" value="Free shipping">Free Shipping(For Prepaid Orders)</label></td>
+                             <td>Free</td>
+                             
+                            </tr>
+                            <tr>
+                                 <td><label for=""><input type="radio" name="1" id="shipping" value="Cash on delivery ">Shipping (Cash on Delivery)</label></td>
+                                <td>	&#8377; 100</td>
+                              
+                            </tr>
+                    </table>
+                    </div>
+                
+                    
+                        <div id="proceed">
+                            <button><i class="fas fa-less-than"></i> return to information</button>
+                            <input type="button" value="Continue to Payment" onclick="shippingMethod()"  >
+                        </div>
+            
+                    <div >
+                        <ul id="policy">
+                            <li>Refunt policy</li>
+                            <li>Shippong policy</li>
+                            <li>Privacy policy</li>
+                            <li>Terms of service</li>
+                        </ul>
+                    </div>
+            
+                
+            
+            </div>
+           <br>
+           &nbsp;
+
+        </div>
+        <div>
+        <div class="checkout-right">
+                   
+                  <div id="shoping-cart-final" style="overflow: scroll; ">
+
+                        
+                    </div>
+                    <div id="bottom-cart-final">
+                        <hr>
+                      <button onclick="applycode()">Apply</button>
+                      <hr>
+                      
+                      <div id="total-div-final">
+                        <p style="display: inline-block;width: 60%;">Total </p>
+                        <p id="total-final"></p>
+                      </div>
+    </div>
+    <script src="../script/checkout.js"></script>
+    <script src="../script/checkout.js"></script>
+    
+</body>
+</html>
+
+
