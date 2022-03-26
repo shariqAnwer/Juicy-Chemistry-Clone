@@ -1,35 +1,34 @@
-Juicy Chemistry visit:  juicy-chemistry-clone.vercel.app
+# Juicy Chemistry
 
-This is the 1st clone created by me and the team as a construct week project as Masai school. this website reflects the overall process of an ecommerce website. 
-the process include
+![Logo](https://cdn.shopify.com/s/files/1/0402/0597/5719/files/Juicy_Chemistry_Logo_64946475-1d2a-48bb-af35-514c95839e36.png?v=1625665364)
 
-signup and login
-landing page
-product page
-individual product page
-shopping cart
-and then checkout and a dummy payment page
-follow these steps to get the flow of the project
+100% organic skin care products in india certified by Ecocert, Order online now in India for your best skin care and experience the proven results.
 
-Tech Stack used - HTML | CSS | Javascript
+## What this is for
 
-visit the link -: juicy-chemistry-clone.vercel.app
+Truly Organic Skincare Line Powered By Goodness Of Mother Nature. No Synthetic Additives. Made From The Finest Natural Ingredients With No Preservatives, Additives & Synthetic Oils. Ecocert France Certified. Formulated for Efficacy. Purity Uncompromised.
 
-1. then you can see a user icon click on that 
-2. You will be redirected to the login page 
-3. If an old user then login. 
-4. Else you can register by creating an account at the registration page. 
-5. After successful register you will be redirected to the home page.
 
-In the home page you can click the shop now button on the banner of the page
-then you will go to the products page 
-1. you have the functionality of filter and sort their (we included only 9 products data) 
-2. then you can add to car by clicking add to cart button on the product. 
-3. add to cart pop up will appear 
-4. then you can proceed to check out if you wish 
-5. input all the field in the inn put box ex address email etc warning :- if you not include any fiild it may show error in the console 
-6. at the last page you can add a coupon get30 to get 30% off on purchase at the last page 11.after proceeding further you can complete the order . 
-7. after 3-5 you will get a pop up of successfull pop up.
+## Authors
+- [@shubham mishra]
+- [@Pawan Lode]
+- [@Dharavath Michitha]
+- [@Sharique Anwer]
 
-I-all nav links will direct to the same pagel II-input all the info wherever asked and below is the image of the homepage
-<img src="https://miro.medium.com/max/700/1*H33viBmdkcrc-6m_YyNE2Q.png">
+## Tech Stack
+
+**FrontEnd:** Html,CSS
+
+**BackEnd:** JavaScript,Localstorage,JSON.
+
+## Tools and Libraries we used
+
+**For font & icons:** FontAwesome
+
+**font-family:** "Roboto", "Helvetica", "Arial", sans-serif
+
+## Contributing
+
+Contributions are always welcome!You can contribute to this project to make this more functional.
+
+Project Link :- juicy-chemistry-clone.vercel.app
